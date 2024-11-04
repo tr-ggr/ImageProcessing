@@ -143,6 +143,7 @@ namespace ImageProcessing
             Byte graydata;
 
             // Convert to grayscale
+            Bitmap temp = new Bitmap(source);
 
             for(int x = 0; x < source.Width; x++)
             {
@@ -151,7 +152,7 @@ namespace ImageProcessing
                     sample = source.GetPixel(x, y);
                     graydata = (byte)((sample.R + sample.B + sample.G) / 3);
                     grey = Color.FromArgb(graydata, graydata, graydata);
-                    source.SetPixel(x, y, grey);
+                    temp.SetPixel(x, y, grey);
                 }
             }
 
@@ -163,17 +164,17 @@ namespace ImageProcessing
             {
                 for (int y = 0; y < source.Height; y++)
                 {
-                    sample = source.GetPixel(x, y);
+                    sample = temp.GetPixel(x, y);
                     histogramData[sample.R]++;
                 }
             }
 
             // Convert array into picture
-            Bitmap histogramPicture = new Bitmap(256, 800);
+            Bitmap histogramPicture = new Bitmap(256, 400);
 
             for (int x = 0; x < 256; x++)
             {
-                for (int y = 0; y < Math.Min(histogramData[x] / 5, histogramPicture.Height - 1); y++)
+                for (int y = 0; y < Math.Min(histogramData[x] / 10, histogramPicture.Height - 1); y++)
                 {
                     histogramPicture.SetPixel(x, (histogramPicture.Height - 1) - y, Color.Black);
                 }
