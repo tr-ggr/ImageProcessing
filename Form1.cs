@@ -191,7 +191,7 @@ namespace ImageProcessing
                 videoSource.WaitForStop();
             }
 
-            loaded.Dispose();
+            loaded?.Dispose();
 
             openFileDialog1.ShowDialog();
         }
