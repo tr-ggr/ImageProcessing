@@ -57,6 +57,7 @@
             this.subtractColorInversionButton = new System.Windows.Forms.Button();
             this.subtractGreyScaleButton = new System.Windows.Forms.Button();
             this.subtractButton = new System.Windows.Forms.Button();
+            this.loadCameraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.processedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loadedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foregroundView)).BeginInit();
@@ -152,7 +153,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(576, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 52);
+            this.label1.Size = new System.Drawing.Size(215, 51);
             this.label1.TabIndex = 9;
             this.label1.Text = "OPTIONS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -168,7 +169,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(150, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 52);
+            this.label2.Size = new System.Drawing.Size(151, 51);
             this.label2.TabIndex = 13;
             this.label2.Text = "INPUT";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -180,7 +181,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(1000, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 52);
+            this.label3.Size = new System.Drawing.Size(198, 51);
             this.label3.TabIndex = 14;
             this.label3.Text = "OUTPUT";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -214,7 +215,7 @@
             this.sAVEToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1345, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1345, 28);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -222,6 +223,7 @@
             // 
             this.loadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadImageToolStripMenuItem,
+            this.loadCameraToolStripMenuItem,
             this.loadForegroundToolStripMenuItem});
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
             this.loadToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
@@ -351,6 +353,13 @@
             this.subtractButton.UseVisualStyleBackColor = true;
             this.subtractButton.Click += new System.EventHandler(this.subtractButton_Click);
             // 
+            // loadCameraToolStripMenuItem
+            // 
+            this.loadCameraToolStripMenuItem.Name = "loadCameraToolStripMenuItem";
+            this.loadCameraToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loadCameraToolStripMenuItem.Text = "Load Camera";
+            this.loadCameraToolStripMenuItem.Click += new System.EventHandler(this.loadCameraToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -422,6 +431,7 @@
         private System.Windows.Forms.Button subtractColorInversionButton;
         private System.Windows.Forms.Button subtractGreyScaleButton;
         private System.Windows.Forms.Button subtractButton;
+        private System.Windows.Forms.ToolStripMenuItem loadCameraToolStripMenuItem;
     }
 }
 
