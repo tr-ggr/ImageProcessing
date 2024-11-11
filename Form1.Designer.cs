@@ -31,11 +31,6 @@
             this.processedView = new System.Windows.Forms.PictureBox();
             this.loadedView = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.basicCopyButton = new System.Windows.Forms.Button();
-            this.greyScaleButton = new System.Windows.Forms.Button();
-            this.colorInversionButton = new System.Windows.Forms.Button();
-            this.histogramButton = new System.Windows.Forms.Button();
-            this.sepiaButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,24 +40,59 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadCameraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadForegroundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sAVEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveProcessedImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveSubtractedImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.convuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edgeEnhanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edgeDetectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.embossToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label5 = new System.Windows.Forms.Label();
             this.subtractView = new System.Windows.Forms.PictureBox();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.subtractButton = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.sepiaButton = new System.Windows.Forms.Button();
+            this.histogramButton = new System.Windows.Forms.Button();
+            this.colorInversionButton = new System.Windows.Forms.Button();
+            this.greyScaleButton = new System.Windows.Forms.Button();
+            this.basicCopyButton = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.smoothingButton = new System.Windows.Forms.Button();
+            this.embossButton = new System.Windows.Forms.Button();
+            this.meanRemovalButton = new System.Windows.Forms.Button();
+            this.sharpenButton = new System.Windows.Forms.Button();
+            this.blurButton = new System.Windows.Forms.Button();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.subtractSepiaButton = new System.Windows.Forms.Button();
+            this.subtractGreyScaleButton = new System.Windows.Forms.Button();
             this.subtractHistogramButton = new System.Windows.Forms.Button();
             this.subtractColorInversionButton = new System.Windows.Forms.Button();
-            this.subtractGreyScaleButton = new System.Windows.Forms.Button();
-            this.subtractButton = new System.Windows.Forms.Button();
-            this.loadCameraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.embossSubtractButton = new System.Windows.Forms.Button();
+            this.meanSubtractButton = new System.Windows.Forms.Button();
+            this.sharpenSubtractButton = new System.Windows.Forms.Button();
+            this.blurSubtractButton = new System.Windows.Forms.Button();
+            this.smoothSubtractButton = new System.Windows.Forms.Button();
+            this.sepiaSubtractButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.processedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loadedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.foregroundView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subtractView)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // processedView
@@ -91,61 +121,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
-            // 
-            // basicCopyButton
-            // 
-            this.basicCopyButton.Enabled = false;
-            this.basicCopyButton.Location = new System.Drawing.Point(530, 95);
-            this.basicCopyButton.Name = "basicCopyButton";
-            this.basicCopyButton.Size = new System.Drawing.Size(301, 53);
-            this.basicCopyButton.TabIndex = 4;
-            this.basicCopyButton.Text = "Basic Copy";
-            this.basicCopyButton.UseVisualStyleBackColor = true;
-            this.basicCopyButton.Click += new System.EventHandler(this.basicCopyButton_Click);
-            // 
-            // greyScaleButton
-            // 
-            this.greyScaleButton.Enabled = false;
-            this.greyScaleButton.Location = new System.Drawing.Point(530, 174);
-            this.greyScaleButton.Name = "greyScaleButton";
-            this.greyScaleButton.Size = new System.Drawing.Size(301, 53);
-            this.greyScaleButton.TabIndex = 5;
-            this.greyScaleButton.Text = "Greyscale";
-            this.greyScaleButton.UseVisualStyleBackColor = true;
-            this.greyScaleButton.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // colorInversionButton
-            // 
-            this.colorInversionButton.Enabled = false;
-            this.colorInversionButton.Location = new System.Drawing.Point(530, 252);
-            this.colorInversionButton.Name = "colorInversionButton";
-            this.colorInversionButton.Size = new System.Drawing.Size(301, 53);
-            this.colorInversionButton.TabIndex = 6;
-            this.colorInversionButton.Text = "Color Inversion";
-            this.colorInversionButton.UseVisualStyleBackColor = true;
-            this.colorInversionButton.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // histogramButton
-            // 
-            this.histogramButton.Enabled = false;
-            this.histogramButton.Location = new System.Drawing.Point(530, 338);
-            this.histogramButton.Name = "histogramButton";
-            this.histogramButton.Size = new System.Drawing.Size(301, 53);
-            this.histogramButton.TabIndex = 7;
-            this.histogramButton.Text = "Histogram";
-            this.histogramButton.UseVisualStyleBackColor = true;
-            this.histogramButton.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // sepiaButton
-            // 
-            this.sepiaButton.Enabled = false;
-            this.sepiaButton.Location = new System.Drawing.Point(530, 418);
-            this.sepiaButton.Name = "sepiaButton";
-            this.sepiaButton.Size = new System.Drawing.Size(301, 53);
-            this.sepiaButton.TabIndex = 8;
-            this.sepiaButton.Text = "Sepia";
-            this.sepiaButton.UseVisualStyleBackColor = true;
-            this.sepiaButton.Click += new System.EventHandler(this.button6_Click);
             // 
             // label1
             // 
@@ -212,7 +187,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadToolStripMenuItem,
-            this.sAVEToolStripMenuItem});
+            this.sAVEToolStripMenuItem,
+            this.convuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1345, 28);
@@ -232,15 +208,22 @@
             // loadImageToolStripMenuItem
             // 
             this.loadImageToolStripMenuItem.Name = "loadImageToolStripMenuItem";
-            this.loadImageToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loadImageToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.loadImageToolStripMenuItem.Text = "Load Image";
             this.loadImageToolStripMenuItem.Click += new System.EventHandler(this.loadImageToolStripMenuItem_Click);
+            // 
+            // loadCameraToolStripMenuItem
+            // 
+            this.loadCameraToolStripMenuItem.Name = "loadCameraToolStripMenuItem";
+            this.loadCameraToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.loadCameraToolStripMenuItem.Text = "Load Camera";
+            this.loadCameraToolStripMenuItem.Click += new System.EventHandler(this.loadCameraToolStripMenuItem_Click);
             // 
             // loadForegroundToolStripMenuItem
             // 
             this.loadForegroundToolStripMenuItem.Enabled = false;
             this.loadForegroundToolStripMenuItem.Name = "loadForegroundToolStripMenuItem";
-            this.loadForegroundToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.loadForegroundToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.loadForegroundToolStripMenuItem.Text = "Load Foreground";
             this.loadForegroundToolStripMenuItem.Click += new System.EventHandler(this.loadForegroundToolStripMenuItem_Click);
             // 
@@ -270,6 +253,49 @@
             this.saveSubtractedImageToolStripMenuItem.Text = "Save Subtracted Image";
             this.saveSubtractedImageToolStripMenuItem.Click += new System.EventHandler(this.saveSubtractedImageToolStripMenuItem_Click);
             // 
+            // convuToolStripMenuItem
+            // 
+            this.convuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.invertToolStripMenuItem,
+            this.blurToolStripMenuItem,
+            this.edgeEnhanceToolStripMenuItem,
+            this.edgeDetectToolStripMenuItem,
+            this.embossToolStripMenuItem});
+            this.convuToolStripMenuItem.Name = "convuToolStripMenuItem";
+            this.convuToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.convuToolStripMenuItem.Text = "Convolution Filters";
+            this.convuToolStripMenuItem.Click += new System.EventHandler(this.convuToolStripMenuItem_Click);
+            // 
+            // invertToolStripMenuItem
+            // 
+            this.invertToolStripMenuItem.Name = "invertToolStripMenuItem";
+            this.invertToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.invertToolStripMenuItem.Text = "Sharpen";
+            // 
+            // blurToolStripMenuItem
+            // 
+            this.blurToolStripMenuItem.Name = "blurToolStripMenuItem";
+            this.blurToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.blurToolStripMenuItem.Text = "Blur";
+            // 
+            // edgeEnhanceToolStripMenuItem
+            // 
+            this.edgeEnhanceToolStripMenuItem.Name = "edgeEnhanceToolStripMenuItem";
+            this.edgeEnhanceToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.edgeEnhanceToolStripMenuItem.Text = "Edge Enhance";
+            // 
+            // edgeDetectToolStripMenuItem
+            // 
+            this.edgeDetectToolStripMenuItem.Name = "edgeDetectToolStripMenuItem";
+            this.edgeDetectToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.edgeDetectToolStripMenuItem.Text = "Edge Detect";
+            // 
+            // embossToolStripMenuItem
+            // 
+            this.embossToolStripMenuItem.Name = "embossToolStripMenuItem";
+            this.embossToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.embossToolStripMenuItem.Text = "Emboss";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -298,54 +324,10 @@
             this.openFileDialog2.FileName = "openFileDialog2";
             this.openFileDialog2.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog2_FileOk);
             // 
-            // subtractSepiaButton
-            // 
-            this.subtractSepiaButton.Enabled = false;
-            this.subtractSepiaButton.Location = new System.Drawing.Point(530, 866);
-            this.subtractSepiaButton.Name = "subtractSepiaButton";
-            this.subtractSepiaButton.Size = new System.Drawing.Size(301, 53);
-            this.subtractSepiaButton.TabIndex = 26;
-            this.subtractSepiaButton.Text = "Sepia";
-            this.subtractSepiaButton.UseVisualStyleBackColor = true;
-            this.subtractSepiaButton.Click += new System.EventHandler(this.subtractSepiaButton_Click);
-            // 
-            // subtractHistogramButton
-            // 
-            this.subtractHistogramButton.Enabled = false;
-            this.subtractHistogramButton.Location = new System.Drawing.Point(530, 786);
-            this.subtractHistogramButton.Name = "subtractHistogramButton";
-            this.subtractHistogramButton.Size = new System.Drawing.Size(301, 53);
-            this.subtractHistogramButton.TabIndex = 25;
-            this.subtractHistogramButton.Text = "Histogram";
-            this.subtractHistogramButton.UseVisualStyleBackColor = true;
-            this.subtractHistogramButton.Click += new System.EventHandler(this.subtractHistogramButton_Click);
-            // 
-            // subtractColorInversionButton
-            // 
-            this.subtractColorInversionButton.Enabled = false;
-            this.subtractColorInversionButton.Location = new System.Drawing.Point(530, 700);
-            this.subtractColorInversionButton.Name = "subtractColorInversionButton";
-            this.subtractColorInversionButton.Size = new System.Drawing.Size(301, 53);
-            this.subtractColorInversionButton.TabIndex = 24;
-            this.subtractColorInversionButton.Text = "Color Inversion";
-            this.subtractColorInversionButton.UseVisualStyleBackColor = true;
-            this.subtractColorInversionButton.Click += new System.EventHandler(this.subtractColorInversionButton_Click);
-            // 
-            // subtractGreyScaleButton
-            // 
-            this.subtractGreyScaleButton.Enabled = false;
-            this.subtractGreyScaleButton.Location = new System.Drawing.Point(530, 622);
-            this.subtractGreyScaleButton.Name = "subtractGreyScaleButton";
-            this.subtractGreyScaleButton.Size = new System.Drawing.Size(301, 53);
-            this.subtractGreyScaleButton.TabIndex = 23;
-            this.subtractGreyScaleButton.Text = "Greyscale";
-            this.subtractGreyScaleButton.UseVisualStyleBackColor = true;
-            this.subtractGreyScaleButton.Click += new System.EventHandler(this.subtractGreyScaleButton_Click);
-            // 
             // subtractButton
             // 
             this.subtractButton.Enabled = false;
-            this.subtractButton.Location = new System.Drawing.Point(530, 543);
+            this.subtractButton.Location = new System.Drawing.Point(518, 534);
             this.subtractButton.Name = "subtractButton";
             this.subtractButton.Size = new System.Drawing.Size(301, 53);
             this.subtractButton.TabIndex = 22;
@@ -353,22 +335,322 @@
             this.subtractButton.UseVisualStyleBackColor = true;
             this.subtractButton.Click += new System.EventHandler(this.subtractButton_Click);
             // 
-            // loadCameraToolStripMenuItem
+            // tabControl1
             // 
-            this.loadCameraToolStripMenuItem.Name = "loadCameraToolStripMenuItem";
-            this.loadCameraToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.loadCameraToolStripMenuItem.Text = "Load Camera";
-            this.loadCameraToolStripMenuItem.Click += new System.EventHandler(this.loadCameraToolStripMenuItem_Click);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(487, 82);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(362, 413);
+            this.tabControl1.TabIndex = 27;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.sepiaButton);
+            this.tabPage1.Controls.Add(this.histogramButton);
+            this.tabPage1.Controls.Add(this.colorInversionButton);
+            this.tabPage1.Controls.Add(this.greyScaleButton);
+            this.tabPage1.Controls.Add(this.basicCopyButton);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(354, 384);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Basic DIP";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // sepiaButton
+            // 
+            this.sepiaButton.Enabled = false;
+            this.sepiaButton.Location = new System.Drawing.Point(27, 302);
+            this.sepiaButton.Name = "sepiaButton";
+            this.sepiaButton.Size = new System.Drawing.Size(301, 53);
+            this.sepiaButton.TabIndex = 13;
+            this.sepiaButton.Text = "Sepia";
+            this.sepiaButton.UseVisualStyleBackColor = true;
+            this.sepiaButton.Click += new System.EventHandler(this.sepiaButton_Click);
+            // 
+            // histogramButton
+            // 
+            this.histogramButton.Enabled = false;
+            this.histogramButton.Location = new System.Drawing.Point(27, 233);
+            this.histogramButton.Name = "histogramButton";
+            this.histogramButton.Size = new System.Drawing.Size(301, 53);
+            this.histogramButton.TabIndex = 12;
+            this.histogramButton.Text = "Histogram";
+            this.histogramButton.UseVisualStyleBackColor = true;
+            this.histogramButton.Click += new System.EventHandler(this.histogramButton_Click);
+            // 
+            // colorInversionButton
+            // 
+            this.colorInversionButton.Enabled = false;
+            this.colorInversionButton.Location = new System.Drawing.Point(27, 164);
+            this.colorInversionButton.Name = "colorInversionButton";
+            this.colorInversionButton.Size = new System.Drawing.Size(301, 53);
+            this.colorInversionButton.TabIndex = 11;
+            this.colorInversionButton.Text = "Color Inversion";
+            this.colorInversionButton.UseVisualStyleBackColor = true;
+            this.colorInversionButton.Click += new System.EventHandler(this.colorInversionButton_Click);
+            // 
+            // greyScaleButton
+            // 
+            this.greyScaleButton.Enabled = false;
+            this.greyScaleButton.Location = new System.Drawing.Point(27, 92);
+            this.greyScaleButton.Name = "greyScaleButton";
+            this.greyScaleButton.Size = new System.Drawing.Size(301, 53);
+            this.greyScaleButton.TabIndex = 10;
+            this.greyScaleButton.Text = "Greyscale";
+            this.greyScaleButton.UseVisualStyleBackColor = true;
+            this.greyScaleButton.Click += new System.EventHandler(this.greyScaleButton_Click);
+            // 
+            // basicCopyButton
+            // 
+            this.basicCopyButton.Enabled = false;
+            this.basicCopyButton.Location = new System.Drawing.Point(27, 24);
+            this.basicCopyButton.Name = "basicCopyButton";
+            this.basicCopyButton.Size = new System.Drawing.Size(301, 53);
+            this.basicCopyButton.TabIndex = 9;
+            this.basicCopyButton.Text = "Basic Copy";
+            this.basicCopyButton.UseVisualStyleBackColor = true;
+            this.basicCopyButton.Click += new System.EventHandler(this.basicCopyButton_Click_1);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.embossButton);
+            this.tabPage2.Controls.Add(this.meanRemovalButton);
+            this.tabPage2.Controls.Add(this.sharpenButton);
+            this.tabPage2.Controls.Add(this.blurButton);
+            this.tabPage2.Controls.Add(this.smoothingButton);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(354, 384);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Conv Filters";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // smoothingButton
+            // 
+            this.smoothingButton.Enabled = false;
+            this.smoothingButton.Location = new System.Drawing.Point(26, 23);
+            this.smoothingButton.Name = "smoothingButton";
+            this.smoothingButton.Size = new System.Drawing.Size(301, 53);
+            this.smoothingButton.TabIndex = 25;
+            this.smoothingButton.Text = "Smoothing";
+            this.smoothingButton.UseVisualStyleBackColor = true;
+            this.smoothingButton.Click += new System.EventHandler(this.smoothingButton_Click_2);
+            // 
+            // embossButton
+            // 
+            this.embossButton.Enabled = false;
+            this.embossButton.Location = new System.Drawing.Point(26, 299);
+            this.embossButton.Name = "embossButton";
+            this.embossButton.Size = new System.Drawing.Size(301, 53);
+            this.embossButton.TabIndex = 29;
+            this.embossButton.Text = "Emboss Laplascian ";
+            this.embossButton.UseVisualStyleBackColor = true;
+            this.embossButton.Click += new System.EventHandler(this.embossButton_Click_2);
+            // 
+            // meanRemovalButton
+            // 
+            this.meanRemovalButton.Enabled = false;
+            this.meanRemovalButton.Location = new System.Drawing.Point(26, 230);
+            this.meanRemovalButton.Name = "meanRemovalButton";
+            this.meanRemovalButton.Size = new System.Drawing.Size(301, 53);
+            this.meanRemovalButton.TabIndex = 28;
+            this.meanRemovalButton.Text = "Mean Removal ";
+            this.meanRemovalButton.UseVisualStyleBackColor = true;
+            this.meanRemovalButton.Click += new System.EventHandler(this.meanRemovalButton_Click);
+            // 
+            // sharpenButton
+            // 
+            this.sharpenButton.Enabled = false;
+            this.sharpenButton.Location = new System.Drawing.Point(26, 162);
+            this.sharpenButton.Name = "sharpenButton";
+            this.sharpenButton.Size = new System.Drawing.Size(301, 53);
+            this.sharpenButton.TabIndex = 27;
+            this.sharpenButton.Text = "Sharpen ";
+            this.sharpenButton.UseVisualStyleBackColor = true;
+            this.sharpenButton.Click += new System.EventHandler(this.sharpenButton_Click_1);
+            // 
+            // blurButton
+            // 
+            this.blurButton.Enabled = false;
+            this.blurButton.Location = new System.Drawing.Point(26, 93);
+            this.blurButton.Name = "blurButton";
+            this.blurButton.Size = new System.Drawing.Size(301, 53);
+            this.blurButton.TabIndex = 26;
+            this.blurButton.Text = "Gaussian Blur";
+            this.blurButton.UseVisualStyleBackColor = true;
+            this.blurButton.Click += new System.EventHandler(this.blurButton_Click_2);
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Controls.Add(this.tabPage4);
+            this.tabControl2.Location = new System.Drawing.Point(487, 608);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(362, 335);
+            this.tabControl2.TabIndex = 28;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.sepiaSubtractButton);
+            this.tabPage3.Controls.Add(this.subtractSepiaButton);
+            this.tabPage3.Controls.Add(this.subtractGreyScaleButton);
+            this.tabPage3.Controls.Add(this.subtractHistogramButton);
+            this.tabPage3.Controls.Add(this.subtractColorInversionButton);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(354, 306);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Basic DIP";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.embossSubtractButton);
+            this.tabPage4.Controls.Add(this.meanSubtractButton);
+            this.tabPage4.Controls.Add(this.sharpenSubtractButton);
+            this.tabPage4.Controls.Add(this.blurSubtractButton);
+            this.tabPage4.Controls.Add(this.smoothSubtractButton);
+            this.tabPage4.Controls.Add(this.button1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(354, 306);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "Conv Filters";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // subtractSepiaButton
+            // 
+            this.subtractSepiaButton.Enabled = false;
+            this.subtractSepiaButton.Location = new System.Drawing.Point(499, 904);
+            this.subtractSepiaButton.Name = "subtractSepiaButton";
+            this.subtractSepiaButton.Size = new System.Drawing.Size(301, 53);
+            this.subtractSepiaButton.TabIndex = 30;
+            this.subtractSepiaButton.Text = "Sepia";
+            this.subtractSepiaButton.UseVisualStyleBackColor = true;
+            // 
+            // subtractGreyScaleButton
+            // 
+            this.subtractGreyScaleButton.Enabled = false;
+            this.subtractGreyScaleButton.Location = new System.Drawing.Point(27, 23);
+            this.subtractGreyScaleButton.Name = "subtractGreyScaleButton";
+            this.subtractGreyScaleButton.Size = new System.Drawing.Size(301, 53);
+            this.subtractGreyScaleButton.TabIndex = 27;
+            this.subtractGreyScaleButton.Text = "Greyscale";
+            this.subtractGreyScaleButton.UseVisualStyleBackColor = true;
+            this.subtractGreyScaleButton.Click += new System.EventHandler(this.subtractGreyScaleButton_Click_1);
+            // 
+            // subtractHistogramButton
+            // 
+            this.subtractHistogramButton.Enabled = false;
+            this.subtractHistogramButton.Location = new System.Drawing.Point(27, 141);
+            this.subtractHistogramButton.Name = "subtractHistogramButton";
+            this.subtractHistogramButton.Size = new System.Drawing.Size(301, 53);
+            this.subtractHistogramButton.TabIndex = 29;
+            this.subtractHistogramButton.Text = "Histogram";
+            this.subtractHistogramButton.UseVisualStyleBackColor = true;
+            this.subtractHistogramButton.Click += new System.EventHandler(this.subtractHistogramButton_Click_1);
+            // 
+            // subtractColorInversionButton
+            // 
+            this.subtractColorInversionButton.Enabled = false;
+            this.subtractColorInversionButton.Location = new System.Drawing.Point(27, 82);
+            this.subtractColorInversionButton.Name = "subtractColorInversionButton";
+            this.subtractColorInversionButton.Size = new System.Drawing.Size(301, 53);
+            this.subtractColorInversionButton.TabIndex = 28;
+            this.subtractColorInversionButton.Text = "Color Inversion";
+            this.subtractColorInversionButton.UseVisualStyleBackColor = true;
+            this.subtractColorInversionButton.Click += new System.EventHandler(this.subtractColorInversionButton_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(499, 901);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(301, 53);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Sepia";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // embossSubtractButton
+            // 
+            this.embossSubtractButton.Enabled = false;
+            this.embossSubtractButton.Location = new System.Drawing.Point(26, 245);
+            this.embossSubtractButton.Name = "embossSubtractButton";
+            this.embossSubtractButton.Size = new System.Drawing.Size(301, 53);
+            this.embossSubtractButton.TabIndex = 40;
+            this.embossSubtractButton.Text = "Emboss Laplascian ";
+            this.embossSubtractButton.UseVisualStyleBackColor = true;
+            this.embossSubtractButton.Click += new System.EventHandler(this.embossSubtractButton_Click);
+            // 
+            // meanSubtractButton
+            // 
+            this.meanSubtractButton.Enabled = false;
+            this.meanSubtractButton.Location = new System.Drawing.Point(27, 186);
+            this.meanSubtractButton.Name = "meanSubtractButton";
+            this.meanSubtractButton.Size = new System.Drawing.Size(301, 53);
+            this.meanSubtractButton.TabIndex = 39;
+            this.meanSubtractButton.Text = "Mean Removal ";
+            this.meanSubtractButton.UseVisualStyleBackColor = true;
+            this.meanSubtractButton.Click += new System.EventHandler(this.meanSubtractButton_Click);
+            // 
+            // sharpenSubtractButton
+            // 
+            this.sharpenSubtractButton.Enabled = false;
+            this.sharpenSubtractButton.Location = new System.Drawing.Point(26, 127);
+            this.sharpenSubtractButton.Name = "sharpenSubtractButton";
+            this.sharpenSubtractButton.Size = new System.Drawing.Size(301, 53);
+            this.sharpenSubtractButton.TabIndex = 38;
+            this.sharpenSubtractButton.Text = "Sharpen ";
+            this.sharpenSubtractButton.UseVisualStyleBackColor = true;
+            this.sharpenSubtractButton.Click += new System.EventHandler(this.sharpenSubtractButton_Click);
+            // 
+            // blurSubtractButton
+            // 
+            this.blurSubtractButton.Enabled = false;
+            this.blurSubtractButton.Location = new System.Drawing.Point(26, 68);
+            this.blurSubtractButton.Name = "blurSubtractButton";
+            this.blurSubtractButton.Size = new System.Drawing.Size(301, 53);
+            this.blurSubtractButton.TabIndex = 37;
+            this.blurSubtractButton.Text = "Gaussian Blur";
+            this.blurSubtractButton.UseVisualStyleBackColor = true;
+            this.blurSubtractButton.Click += new System.EventHandler(this.blurSubtractButton_Click);
+            // 
+            // smoothSubtractButton
+            // 
+            this.smoothSubtractButton.Enabled = false;
+            this.smoothSubtractButton.Location = new System.Drawing.Point(26, 9);
+            this.smoothSubtractButton.Name = "smoothSubtractButton";
+            this.smoothSubtractButton.Size = new System.Drawing.Size(301, 53);
+            this.smoothSubtractButton.TabIndex = 36;
+            this.smoothSubtractButton.Text = "Smoothing";
+            this.smoothSubtractButton.UseVisualStyleBackColor = true;
+            this.smoothSubtractButton.Click += new System.EventHandler(this.smoothSubtractButton_Click);
+            // 
+            // sepiaSubtractButton
+            // 
+            this.sepiaSubtractButton.Enabled = false;
+            this.sepiaSubtractButton.Location = new System.Drawing.Point(27, 200);
+            this.sepiaSubtractButton.Name = "sepiaSubtractButton";
+            this.sepiaSubtractButton.Size = new System.Drawing.Size(301, 53);
+            this.sepiaSubtractButton.TabIndex = 31;
+            this.sepiaSubtractButton.Text = "Sepia";
+            this.sepiaSubtractButton.UseVisualStyleBackColor = true;
+            this.sepiaSubtractButton.Click += new System.EventHandler(this.sepiaSubtractButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1345, 1061);
-            this.Controls.Add(this.subtractSepiaButton);
-            this.Controls.Add(this.subtractHistogramButton);
-            this.Controls.Add(this.subtractColorInversionButton);
-            this.Controls.Add(this.subtractGreyScaleButton);
             this.Controls.Add(this.subtractButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.subtractView);
@@ -377,14 +659,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.sepiaButton);
-            this.Controls.Add(this.histogramButton);
-            this.Controls.Add(this.colorInversionButton);
-            this.Controls.Add(this.greyScaleButton);
-            this.Controls.Add(this.basicCopyButton);
             this.Controls.Add(this.loadedView);
             this.Controls.Add(this.processedView);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Image Processing by Tristan Tolentino";
@@ -395,6 +674,12 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subtractView)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,11 +690,6 @@
         private System.Windows.Forms.PictureBox processedView;
         private System.Windows.Forms.PictureBox loadedView;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button basicCopyButton;
-        private System.Windows.Forms.Button greyScaleButton;
-        private System.Windows.Forms.Button colorInversionButton;
-        private System.Windows.Forms.Button histogramButton;
-        private System.Windows.Forms.Button sepiaButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Label label2;
@@ -426,12 +706,41 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox subtractView;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
-        private System.Windows.Forms.Button subtractSepiaButton;
-        private System.Windows.Forms.Button subtractHistogramButton;
-        private System.Windows.Forms.Button subtractColorInversionButton;
-        private System.Windows.Forms.Button subtractGreyScaleButton;
         private System.Windows.Forms.Button subtractButton;
         private System.Windows.Forms.ToolStripMenuItem loadCameraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem convuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem invertToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blurToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem edgeEnhanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem edgeDetectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem embossToolStripMenuItem;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button sepiaButton;
+        private System.Windows.Forms.Button histogramButton;
+        private System.Windows.Forms.Button colorInversionButton;
+        private System.Windows.Forms.Button greyScaleButton;
+        private System.Windows.Forms.Button basicCopyButton;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button smoothingButton;
+        private System.Windows.Forms.Button embossButton;
+        private System.Windows.Forms.Button meanRemovalButton;
+        private System.Windows.Forms.Button sharpenButton;
+        private System.Windows.Forms.Button blurButton;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button subtractSepiaButton;
+        private System.Windows.Forms.Button subtractGreyScaleButton;
+        private System.Windows.Forms.Button subtractHistogramButton;
+        private System.Windows.Forms.Button subtractColorInversionButton;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button embossSubtractButton;
+        private System.Windows.Forms.Button meanSubtractButton;
+        private System.Windows.Forms.Button sharpenSubtractButton;
+        private System.Windows.Forms.Button blurSubtractButton;
+        private System.Windows.Forms.Button smoothSubtractButton;
+        private System.Windows.Forms.Button sepiaSubtractButton;
     }
 }
 
